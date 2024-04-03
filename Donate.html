@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Donation Form</title>
+  <script  src="home.js"></script>
+  <link rel="stylesheet" href="./assets/css/Donate.css">
+</head>
+<body>
+  
+  
+  <h1>Money Donation for Food</h1>
+  <form>
+    <label for="fullName">Your Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+    <label for="emailAddress">Your Email Address:</label>
+    <input type="email" id="emailAddress" name="emailAddress" placeholder="Enter your email address" required>
+
+    <label for="phoneNumber">Your Phone Number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+
+    <label for="billingAddress">Billing Address:</label>
+    <textarea id="billingAddress" name="billingAddress" placeholder="Enter your billing address" required></textarea>
+
+    <div class="donation-amount">
+      <label for="donationAmount">Donation Amount:</label>
+      <input type="number" id="donationAmount" name="donationAmount" min="1" required>
+    </div>
+
+    <div class="cover-fee">
+      <label for="coverFee">Would you like to cover the processing fees for your donation?</label>
+      <input type="checkbox" id="coverFee" name="coverFee">
+    </div>
+
+    <div class="opt-in">
+      <label for="optIn">Receive impact updates on your donation?</label>
+      <input type="checkbox" id="optIn" name="optIn">
+    </div>
+
+
+    <button type="submit">Donate</button>
+  </form>
+</body>
+</html>
+
+
